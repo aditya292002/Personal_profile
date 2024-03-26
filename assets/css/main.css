@@ -1,0 +1,31 @@
+.skillBox {
+    color: white;
+    background-color: rgba(2, 19, 33, 0.8);
+    max-width: 700px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.skillBox p {
+    font-size: medium;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: larger;
+    padding: 10px;
+}
+.skillBox p span {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.img-fluid{
+    border-radius: 10%;
+    border: 2px solid #b8a07e;
+    box-shadow: 0 0 10px black;
+}
