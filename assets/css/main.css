@@ -29,3 +29,13 @@
     border: 2px solid #b8a07e;
     box-shadow: 0 0 10px black;
 }
+
+@media (max-width: 650px) {
+    .skillBox p {
+        font-size: large;
+        padding: 5px;
+    }
+    .skillBox {
+        height: 450px;
+    }
+}
