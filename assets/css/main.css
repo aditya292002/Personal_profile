@@ -28,8 +28,6 @@
 
 .img-fluid{
     border-radius: 10%;
-    border: 2px solid #b8a07e;
-    box-shadow: 0 0 10px black;
 }
 
 @media (max-width: 450px) {
@@ -74,4 +72,22 @@
     transform: translateX(-50%);
     font-family: "Comic Neue", cursive;
     margin: 2rem;
+}
+/* --------------------------------------------------------------------------- */
+.hover .img-fluid{
+    border-radius: 10%;
+    border: 2px solid black;
+}
+
+
+.airbus-img {
+    border-radius: 30%;
+    margin-right: 2rem;
+    padding-right: 2rem;
+}
+
+.mdanalysis-img {
+    padding-top: 2rem;
+    border-radius: 30%;
+    padding-right: 4rem;
 }
