@@ -91,3 +91,14 @@
     border-radius: 30%;
     padding-right: 4rem;
 }
+
+
+/* certificate section */
+.certificate {
+    background-color: #898989;
+}
+
+.certificate-div {
+    display: block;
+    margin-bottom: 5rem;
+}
