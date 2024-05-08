@@ -102,3 +102,12 @@
     display: block;
     margin-bottom: 5rem;
 }
+
+.certificate-div {
+    padding-left: 10rem;
+}
+.certificateInfo {
+    margin-left: 10rem;
+    margin
+    background-color: aqua;
+}
