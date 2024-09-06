@@ -28,6 +28,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+
+
+    <!-- red hat mono font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -61,8 +68,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#Experience">Experience</a></li>
-          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link  scrollto" href="#journal">Blog</a></li>
+          <!-- <li><a class="nav-link  scrollto" href="#portfolio">Projects</a></li> -->
+          <!-- <li><a class="nav-link  scrollto" href="#journal">Blog</a></li> -->
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -89,24 +96,26 @@
         </p>
         <div class="skillBox">
           <p>- <span>Frontend</span> - Javascript, React </p>
-          <p> - <span>Backend</span> - FastAPI, Django, Nodejs</p>
+          <p> - <span>Backend</span> - FastAPI, Drogon (Cpp), Nodejs</p>
           <p> - <span>Database</span> - Mongodb, MySQL, Postgres </p>
           <p>- <span>DevOps</span> - Docker, Github Actions</p>
           <p>- <span>Testing</span> - pytest </p>
           <p>- <span>DB Migrations</span> - Alembic, SqlAlchemy</p>
-          <p>- <span>AI & ML</span> - (Numpy, Pandas, Scikit Learn)</p>
+          <p>- <span>AI & ML</span> - Numpy, Pandas, Scikit Learn</p>
           <br>
 
           <ul class="list-unstyled list-social">
             <li><a href="https://leetcode.com/keshariaditya90/" target="_blank"><img src="assets/icons/leetcode.svg"
                   alt="leetcode_icon" style="height:25px;"></a></li>
+                  <li><a href="https://github.com/aditya292002" target="_blank"><img src="assets/img/icons8-github.svg"
+                    alt="leetcode_icon" style="height:25px;"></a></li>
             <li><a href="https://twitter.com/ADITYA292002"><i class="bi bi-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/aditya292002/"><i class="bi bi-instagram"></i></a></li>
             <li><a href="https://www.linkedin.com/in/aditya-keshari-1528451b7/"><i class="bi bi-linkedin"></i></a></li>
           </ul>
           <br>
           <h3 style="color: white;">Resume <a
-              href="https://drive.google.com/file/d/1FWdYhL6BN9GGgI_i9s2m9G-4oE_JsMyw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XmcWXi6PspJ536DiJOi9Ekq0TV0UJ_Rk/view?usp=sharing"
               target="_blank"><img src="./assets/icons/export_5468791.png" style="height: 2.5rem; width: 2.5rem;"
                 alt="redirect icon"></a></h3>
         </div>
@@ -129,13 +138,35 @@
             </div>
 
             <div class="col-lg-7">
-              <div class="about-descr">
-                <p class="p-heading">As a Computer Science graduate student with a fervent interest in Software
-                  Engineering, Artificial Intelligence, and Machine Learning,</p>
-                <p class="separator">Recently I completed from Btech(2020 to 2024), the whole 4 yrs was a learning and enriching experience. Got to learn various technologies and participate in various hackathons and open source projects. Actively looking for better offers.</p>
-                <p><strong>Recently got an offer from TCS</strong></p>
-                  <img src="assets/img/tcsLogo.jpeg" alt="tcs logo" style="width: 200px; height: auto;">
-                <p color="black"><i> Thank you </i></p>
+              <div class="about-descr" style="color: black;">
+                <p class="separator" style="font-size: 16px; color: black;">My name is Aditya Keshari. I recently graduated with a Bachelor's degree in Information Technology from B.P.P.I.M.T and have been exploring opportunities in software development and research in AI, ML, and software development. I am passionate about AI, ML, and high-performance computing. I am open to interacting with people and eager to learn new things.</p>
+                <p class="separator" style="color: black;">Currently, I am:</p>
+                <ul>
+                  <li class="separator">
+                    Learning Drogon, a high-performance C++ web framework.
+                  </li>
+                  <li class="separator">
+                    Developing a Redis alternative using Drogon and C++.
+                  </li>
+                  <li class="separator">
+                    Writing posts for Medium.com and Dev.to.
+                  </li>
+                  <li class="separator">
+                    Recently got an offer from TCS
+                    <style>
+                      .tcs-logo {
+                        width: 200px;
+                        height: auto;
+                        border-radius: 10px;
+                      }
+                    </style>
+
+                    <img src="assets/img/tcsLogo.jpeg" alt="tcs logo" class="tcs-logo">
+                  </li>
+                  <li class="separator">
+                    Exploring opportunities that match my expectations.
+                  </li>
+                </ul>
               </div>
 
             </div>
@@ -144,8 +175,8 @@
       </div><!-- End About Section -->
 
       <!-- ======= Experience and certification Section ======= -->
-      <div id="Experience" style="background-color: #fafafa; padding: 5rem;">
-        <div class="container">
+      <div id="Experience" style="padding: 5rem;">
+        <div class="container" style="background-color: #b1b5b987; padding: 3rem;">
 
           <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
             <h1 style="text-align: center;">Experience</h1>
@@ -154,16 +185,27 @@
               <img src="./assets/img/mdanalysis-img.png" alt="" class="mdanalysis-img"
                 style="float: left; margin-right: 10px;">
               <span style="padding-top: 5rem;">MDAnalysis</span>
-              <p class="separator">Open Source Contributor</p>
+              <p class="separator" style="color: black;">Open Source Contributor</p>
               <ul>
-                <li>Updated outdated tests and test assertions with new ones.</li>
-                <li>Performed necessary modifications to maintain the persistent behavior.</li>
+                <li style="color: black;">Contributed to the MDAnalysis Python library for molecular-scale simulations.</li>
+                <li style="color: black;">Collaborated with maintainers to understand raised issues and expected outcomes.</li>
+                <li style="color: black;">Updated outdated tests with new ones, ensuring consistent behavior with previous tests.</li>
+                <li style="color: black;">See the pull request at https://github.com/MDAnalysis/mdanalysis/pull/4438.</li>
               </ul>
             </div><!-- End testimonial item -->
           </div>
 
           <!-- CERTIFICATES -->
           <h1 style="text-align: center;">Certifications</h1>
+
+          <div class="services-block" style="margin-bottom: 3rem; padding-left: 10rem;">
+            <img src="./assets/img/linux_foundation_img.png" alt=""
+            class="mdanalysis-img"
+            style="float: left; margin-right: 10px; height: 10rem;">
+            <a href="https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/61f43dce-f3b2-4441-9a28-d32ffe7e0808-aditya-keshari-4114d4ce-37f7-4945-aac4-ff30fc4a0c63-certificate.pdf"><span style="padding-top: 5rem;">Introduction to DevOps and Site Reliability Engineering - LFS162</span></a>
+            <p class="separator">Completed</p>
+          </div>
+
           <div class="services-block" style="margin-bottom: 3rem; padding-left: 10rem;">
             <img src="./assets/img/certificate_sec/imb_img.png" alt=""
             class="mdanalysis-img"
@@ -179,13 +221,6 @@
             <p class="separator">Completed</p>
           </div><!-- End testimonial item -->
 
-          
-          <div class="services-block" style="margin-bottom: 3rem; padding-left: 10rem;">
-            <img src="./assets/img/certificate_sec/deeplearning_img.png" alt="" class="mdanalysis-img"
-              style="float: left; margin-right: 10px; height: 10rem;">
-            <span style="padding-top: 5rem;">Deep Learning Specialization | DeepLearning.AI</span>
-            <p class="separator">Ongoing</p>
-          </div><!-- End testimonial item -->
 
           <div class="services-block" style="margin-bottom: 3rem; padding-left: 10rem;">
             <img src="./assets/img/certificate_sec/udemyImg.jpg" alt="" class="mdanalysis-img"
@@ -200,237 +235,13 @@
 
 
 
-      <!-- ======= Portfolio Section ======= -->
-      <div id="portfolio" class="paddsection">
-
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-
-        <div class="container">
-
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Web</li>
-                <li data-filter=".filter-card">AI and ML</li>
-                <!-- <li data-filter=".filter-web">Demo</li> -->
-              </ul>
-            </div>
-          </div>
-
-          <div class="row portfolio-container">
-
-            <a href="https://twitter.com/i/status/1785323218347204722">
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="assets/img/portfolio/data_query1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Data query tool</h4>
-                  <p>Upload you csv files and query in natural language.</p>
-                  <a href="assets/img/portfolio/storyWeaver/chat_and_story (1).jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </a>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/storyWeaver/chat_and_story (1).jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>StoryWeave</h4>
-                <p>This is a chat-room app for crafting artistic tales.</p>
-                <a href="assets/img/portfolio/storyWeaver/chat_and_story (1).jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/witquiz/logo.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WitQuiz-Whiz</h4>
-                <p>Quiz-App: Automaticaaly Generates Quiz</p>
-                <a href="assets/img/portfolio/witquiz/logo.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-3(1).jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WoofMedia</h4>
-                <p>Social-Media: App for pets and their owners</p>
-                <a href="assets/img/portfolio/portfolio-3(1).jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="https://woofmatch.onrender.com/ " class="details-link" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4> SpaceX_First_Phase_Landing </h4>
-                <p>Predicts the successful landing of the Falcon 9 booster with high accuracy, using machine learning.
-                </p>
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/aditya292002/SpaceX_First_Phase_Landing" class="details-link"
-                  title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/credit_Card_image.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4> Customer_Segmentation on Credit Card Data </h4>
-                <p>Data Analytics</p>
-                <a href="assets/img/portfolio/credit_Card_image.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/aditya292002/Customer_Segmentation" class="details-link"
-                  title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4> House Price Prediction </h4>
-                <p class="appealing-text">Predict the price of your dream house based on a given set of features.</p>
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/aditya292002/Customer_Segmentation" class="details-link"
-                  title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Social-Media-api</h4>
-                <p>Developed Scalable API, implemented features, user authentication, making posts, voting</p>
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="https://woofmatch.onrender.com/ " class="details-link" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <!-- <a href="./assets/video/WitQuiz-app.mp4">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="./assets/img/portfolio/quiz-app-demo.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Demo WitQuiz-Whiz</h4>
-              <p>Demo</p>
-              <a href="./assets/img/demo-witquiz-overlay-img.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="./assets/video/WitQuiz-app.mp4" class="details-link" title="More Details"><i
-                  class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </a> -->
 
 
 
-          </div>
-
-          <p style="font-size: larger; font-weight: bolder;"><a
-              href="https://aditya292002.github.io/Personal_profile/portfolio-details.html"
-              style="color: rgb(133, 168, 229)">Discover More (Visit to explore my projects in detail)</a></p>
-        </div>
-
-      </div><!-- End Portfolio Section -->
-
-
-
-
-      <!-- ======= Blog Section ======= -->
-      <div id="journal" class="text-left paddsection">
-
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>Blog</h2>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="journal-block">
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6">
-                <div class="journal-info">
-
-                  <img src="assets/img/blog/leetcode_31_12_2023.png" class="img-responsive" alt="img">
-
-                  <div class="journal-txt">
-
-                    <!-- <h4><a href="blog-single.html">Leetcode  Weekly Contest 378 Rank </a></h4> -->
-                    <h4> Leetcode Weekly Contest 378 Rank</h4>
-                    <p class="separator">Solved the first three question in 46 minutes, securing a rank of 1355 / 18418
-                      or Top 7%.
-                    </p>
-                    <p style="color:#333">Date: 31 December 2023</p>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="journal-info">
-
-                  <img src="assets/img/blog/advent_of_code.png" class="img-responsive" alt="img">
-
-                  <div class="journal-txt">
-
-                    <!-- <h4><a href="blog-single.html">Advent of Code 2023</a></h4> -->
-                    <h4>Advent of Code 2023</h4>
-                    <p class="separator">Participared first time in Advent of Code 2023, wonderful experience.
-                    </p>
-                    <p style="color:#333">Date: 25 December 2023</p>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="journal-info">
-
-                  <img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img">
-
-                  <div class="journal-txt">
-
-                    <!-- <h4><a href="blog-single.html">Developed WitQuiz-app</a></h4> -->
-                    <h4>Developed WitQuiz-app</h4>
-                    <p class="separator">The project was developed using React and FastAPI. Throughout the development
-                      process, I had the opportunity to learn and enhance my skills in React.
-                    </p>
-                    <p style="color:#333">Date: 28 November 2023</p>
-
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div><!-- End Journal Section -->
+     
 
       <!-- ======= Contact Section ======= -->
-      <div id="contact" class="paddsection">
+      <div id="contact" class="paddsection" style="background-color: #b1b5b987;">
         <div class="container">
           <div class="contact-block1">
             <div class="row">
@@ -501,7 +312,7 @@
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <div id="footer" class="text-center">
+    <div id="footer" class="text-center" style="background-color: #b1b5b987;">
       <div class="container">
         <div class="socials-media text-center">
 

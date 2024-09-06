@@ -12,7 +12,7 @@
 body {
   background: #ffffff;
   color: #898989;
-  font-family: "Poppins", helvetica;
+  font-family: "Red Hat Mono", monospace;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -205,7 +205,7 @@ p {
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Red Hat Mono", monospace;
   font-style: italic;
 }
 
@@ -231,8 +231,8 @@ p {
 */
 .navbar {
   padding: 0;
+  position: static; /* Ensure the navbar is positioned according to the normal document flow */
 }
-
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -251,12 +251,12 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #7e7d7d;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 16px;
+  font-weight: 200;
+  color: #6c6868;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0s;
 }
 
 .navbar a i,
@@ -266,14 +266,15 @@ p {
   margin-left: 5px;
 }
 
-.navbar a:hover,
+.navbar a:hover 
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #b8a07e;
+  font-weight: 500;
+  font-color: #b8a07e;
 }
 
-.navbar .dropdown ul {
+/* .navbar .dropdown ul {
   display: block;
   position: absolute;
   left: 30px;
@@ -286,7 +287,7 @@ p {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-}
+} */
 
 .navbar .dropdown ul li {
   min-width: 200px;
@@ -449,7 +450,7 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/homeBgNewEnhanced.jpg") repeat scroll center center/cover;
+  background: url("../img/bg1.jpg") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -578,7 +579,7 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: "Playfair Display", serif;
+  font-family:"Red Hat Mono", monospace;
   font-size: 28px;
   text-align: left;
 }
