@@ -1,31 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Navbar</title>
-    <link rel="stylesheet" href="try_css.css">
-    <!-- red hat mono font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- google font -->
+       <!-- red hat mono font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+       
+  
+  <title>Aditya Keshri - Experience & Certifications</title>
+  <style>
+    /* Basic CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: "Red Hat Mono", monospace;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2C3E50;
+      color: white;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #2C3E50;
+      margin-bottom: 1em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5em;
+    }
+
+    .section {
+      margin-bottom: 2em;
+    }
+
+    /* Flexbox layout for logo and content */
+    .item {
+      display: flex;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 1em;
+      margin-bottom: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Logo styling */
+    .item img {
+      width: 100px;
+      height: 100px;
+      margin-right: 1.5rem;
+    }
+
+    .item h3 {
+      font-size: 1.4em;
+      color: #34495E;
+    }
+
+    .item p {
+      margin-top: 0.5em;
+      font-size: 1.1em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+    }
+
+    ul li img {
+      width: 100px;
+      height: 100px;
+      margin-right: 1.5rem;
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      margin-top: 2em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .item h3 {
+        font-size: 1.2em;
+      }
+    }
+
+/* Navbar styles */
+/* Navbar styles */
+
+.navbar {
+    background-color: transparent;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: "Red Hat Mono", monospace;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-item {
+    font-size: 16px;
+    font-weight: 400;
+    transition: font-weight 0.3s ease;
+}
+
+.navbar-item:hover {
+    font-weight: 600;
+}
+
+.navbar-link {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar-item {
+        font-size: 12px;
+    }
+}
+
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <ul class="navbar-menu">
-                <li class="navbar-item"><a href="#" class="navbar-link">01:Home |</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">02:Resume |</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">30: Blog</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="content">
-        <h1>Welcome to the website!</h1>
-        <p>Scroll to see the navbar stays static.</p>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="index.html" class="navbar-link">01:Home |</a></li>
+            <li class="navbar-item"><a href="resume.html" class="navbar-link">02:Resume </a></li>
+            <!-- <li class="navbar-item"><a href="#" class="navbar-link" style="font-size: 20px;">30: Blog</a></li> -->
+        </ul>
     </div>
+</nav>
+  <div class="container">
+    <!-- Experience Section -->
+    <section class="section">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <img src="./assets/img/mdanalysis-img.png" alt="Backend Development Logo"> <!-- Add your logo path here -->
+        <div>
+          <h3>MDAnalysis | Open Source Developer</h3>
+          <div>
+            <p> > Contributed to the MDAnalysis Python library for molecular-scale simulations.</p>
+            <p> > Collaborated with maintainers to understand raised issues and expected outcomes.</p>
+            <p> > Updated outdated tests with new ones, ensuring consistent behavior with previous tests.</p>
+            <p> > See the pull request at <a href="https://github.com/MDAnalysis/mdanalysis/pull/4438">https://github.com/MDAnalysis/mdanalysis/pull/4438</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./assets/img/medium_logo.png" alt="DSA Logo"> <!-- Add your logo path here -->
+        <div>
+          <h3>Medium.com, Dev.to | Blogger</h3>
+          <div>
+            <p> > I write blogs focused on technology, software development, and personal experiences in the tech field
+            </p>
+            <p> > A couple of my blogs have garnered 140+ views, engaging a growing audience.</p>
+            <p> > My posts cover topics such as AI/ML, full-stack development, and industry insights, helping others learn and stay informed.</p>
+            <a href="https://medium.com/@keshariaditya90"><p><strong> > Visit</strong></p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <a href="https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/61f43dce-f3b2-4441-9a28-d32ffe7e0808-aditya-keshari-4114d4ce-37f7-4945-aac4-ff30fc4a0c63-certificate.pdf"><li>
+          <img src="./assets/img/linux_foundation_img.png" alt="deeplearning.ai logo"> <!-- Add your logo path here -->
+          Introduction to DevOps and Site Reliability Engineering LFS162
+        </li></a>
+        <a href="https://www.credly.com/users/aditya-keshari.4fb2137a">
+        <li>
+          <img src="./assets/img/certificate_sec/deeplearning_img.png" alt="deeplearning.ai logo"> <!-- Add your logo path here -->
+          Machine Learning Specialization | DeepLearning.AI
+        </li></a>
+        <li>
+          <img src="./assets/img/certificate_sec/imb_img.png" alt="ibm logo"> <!-- Add your logo path here -->
+          IBM Data science professional certificate
+        </li>
+        <li>
+          <img src="./assets/img/certificate_sec/udemyImg.jpg" alt="udemy logo"> <!-- Add your logo path here -->
+          Web Development Bootcamp | Udemy
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Aditya Keshri. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>

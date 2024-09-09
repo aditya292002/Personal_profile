@@ -51,6 +51,81 @@
 
   <!-- bootstrap 5 -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+  <style>
+
+    /* Navbar styles */
+
+.navbar {
+    background-color: transparent;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: "Red Hat Mono", monospace;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-item {
+    font-size: 16px;
+    font-weight: 400;
+    transition: font-weight 0.3s ease;
+}
+
+.navbar-item:hover {
+    font-weight: 600;
+}
+
+.navbar-link {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar-item {
+        font-size: 12px;
+    }
+}
+
+  </style>
+
 </head>
 
 <body>
@@ -76,7 +151,7 @@
         <div class="navbar-container">
             <ul class="navbar-menu">
                 <li class="navbar-item"><a href="index.html" class="navbar-link">01:Home |</a></li>
-                <li class="navbar-item"><a href="resume.html" class="navbar-link">02:Resume </a></li>
+                <li class="navbar-item"><a href="try.html" class="navbar-link">02:Resume </a></li>
                 <!-- <li class="navbar-item"><a href="#" class="navbar-link">30: Blog</a></li> -->
             </ul>
         </div>
@@ -139,7 +214,7 @@
 
             <div class="col-lg-7">
               <div class="about-descr" style="color: black;">
-                <p class="separator" style="font-size: 16px; color: black;">My name is Aditya Keshari. I recently graduated with a Bachelor's degree in Information Technology from B.P.P.I.M.T and have been exploring opportunities in software development and research in AI, ML, and software development. I am passionate about AI, ML, and high-performance computing. I am open to interacting with people and eager to learn new things.</p>
+                <p class="separator" style="font-size: 16px; color: black; font-weight: 400;">My name is Aditya Keshari. I recently graduated with a Bachelor's degree in Information Technology from B.P.P.I.M.T and have been exploring opportunities in software development and research in AI, ML, and software development. I am passionate about AI, ML, and high-performance computing. I am open to interacting with people and eager to learn new things.</p>
                 <p class="separator" style="color: black;">Currently, I am:</p>
                 <ul>
                   <li class="separator">
