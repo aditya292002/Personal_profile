@@ -1,0 +1,10 @@
+The Website structure is as follow:
+- Home page 
+- Resume page
+- My blogs
+  - blog_home.html is blog home page
+  - all the blog in blogs dir
+  - each blog naming structure => minimal_name_day_month_year
+  - Curr Status of blog
+  - blog_home.html done
+  - No blogs yet
