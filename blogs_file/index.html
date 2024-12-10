@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ultimate Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .navbar {
+            background-color: transparent;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            font-family: "Red Hat Mono", monospace;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-item {
+            font-size: 20px;
+            font-weight: 400;
+            transition: font-weight 0.3s ease;
+        }
+
+        .navbar-item:hover {
+            font-weight: 600;
+        }
+
+        .navbar-link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar-link:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .navbar-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navbar-item {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="../index.html" class="navbar-link">01:Home |</a></li>
+                    <li class="navbar-item"><a href="../my_resume.html" class="navbar-link">02:Resume |</a></li>
+                    <li class="navbar-item"><a href="./blogs_file/index.html" class="navbar-link">03:Blogs</a></li>
+                </ul>
+            </div>  
+        </nav>
+        <div class="container">
+            <h1 class="logo">Blogs</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Explore My Latest Blogs</h2>
+        </section>
+
+        <section class="blog-list">
+            <div class="blog-card">
+                <img src="./blog_images/fastapi.png" alt="Blog 1">
+                <h3>Secure FastAPI WebSocket</h3>
+                <p>Fixing Dependency Injection Errors...</p>
+                <a href="https://medium.com/@keshariaditya90/secure-fastapi-websocket-fixing-dependency-injection-errors-26fd10f97be1" class="btn">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="blog_images/drogon_cpp.png" alt="Blog 2">
+                <h3>Set Drogon</h3>
+                <p>Simplest Way to Set Up the Drogon C++ Framework...</p>
+                <a href="https://medium.com/@keshariaditya90/simplest-way-to-set-up-the-drogon-c-framework-5b94984c9f01" class="btn">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; © Aditya Keshari 2024 | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
